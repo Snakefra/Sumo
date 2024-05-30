@@ -1,0 +1,114 @@
+
+const int A= A0;
+const int B= A1;
+const int C= A2;
+const int D= A3;    
+const int W= 2;
+const int X= 3;     
+const int Y= 4;
+const int Z= 5;
+
+int inA = 0;
+int inB = 0;  
+int inC = 0;
+int inD = 0;      
+
+void setup() {
+  pinMode(A, INPUT);
+  pinMode(B, INPUT);
+  pinMode(C, INPUT);
+  pinMode(D, INPUT);
+  pinMode(W, OUTPUT); 
+  pinMode(X, OUTPUT);
+  pinMode(Y, OUTPUT);
+  pinMode(Z, OUTPUT);
+  
+}
+
+void loop() {
+  
+ inA = digitalRead(A);
+ inB = digitalRead(B);
+ inC = digitalRead(C);
+ inD = digitalRead(D);
+
+  if (inA == HIGH)
+  if (inB == LOW)
+  if (inC == LOW)
+  if (inD == LOW)
+  {   
+    digitalWrite(W, HIGH);
+    digitalWrite(X, LOW);
+    digitalWrite(Y, HIGH);
+    digitalWrite(Z, LOW);
+  } else {   
+    digitalWrite(W, LOW);
+    digitalWrite(X, LOW);
+    digitalWrite(Y, LOW);
+    digitalWrite(Z, LOW);
+}
+ inA = digitalRead(A);
+ inB = digitalRead(B);
+ inC = digitalRead(C);
+ inD = digitalRead(D);
+  if (inA == LOW)
+  if (inB == HIGH)
+  if (inC == LOW)
+  if (inD == LOW)
+  {   
+    digitalWrite(W, LOW);
+    digitalWrite(X, HIGH);
+    digitalWrite(Y, HIGH);
+    digitalWrite(Z, LOW);
+  } else {   
+    digitalWrite(W, LOW);
+    digitalWrite(X, LOW);
+    digitalWrite(Y, LOW);
+    digitalWrite(Z, LOW);
+
+    
+  }
+ inA = digitalRead(A);
+ inB = digitalRead(B);
+ inC = digitalRead(C);
+ inD = digitalRead(D);
+  if (inA == LOW)
+  if (inB == LOW)
+  if (inC == HIGH)
+  if (inD == LOW) 
+  {   
+    digitalWrite(W, HIGH);
+    digitalWrite(X, LOW);
+    digitalWrite(Y, LOW);
+    digitalWrite(Z, HIGH);
+  } else {   
+    digitalWrite(W, LOW);
+    digitalWrite(X, LOW);
+    digitalWrite(Y, LOW);
+    digitalWrite(Z, LOW);
+
+    
+  }
+ inA = digitalRead(A);
+ inB = digitalRead(B);
+ inC = digitalRead(C);
+ inD = digitalRead(D);
+  if (inA == LOW)
+  if (inB == LOW)
+  if (inC == LOW)
+  if (inD == HIGH)
+  {   
+    digitalWrite(W, LOW);
+    digitalWrite(X, HIGH);
+    digitalWrite(Y, LOW);
+    digitalWrite(Z, HIGH);
+  } else {   
+    digitalWrite(W, LOW);
+    digitalWrite(X, LOW);
+    digitalWrite(Y, LOW);
+    digitalWrite(Z, LOW);
+
+    
+  }
+  
+}
